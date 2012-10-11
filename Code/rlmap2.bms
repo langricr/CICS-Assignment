@@ -7,7 +7,14 @@ MENUINQ DFHMDI SIZE=(24,80)
                INITIAL='I N Q U I R Y   S C R E E N'             
         DFHMDF POS=(3,25),LENGTH=29,ATTRB=(ASKIP,BRT),                 C
                INITIAL='============================='
-*
+* NAME
+        DFHMDF POS=(2,1),LENGTH=7,ATTRB=(ASKIP),                       C
+               INITIAL='RICHARD'
+        DFHMDF POS=(3,1),LENGTH=4,ATTRB=(ASKIP),                       C
+               INITIAL='LANG'
+* MENU
+        DFHMDF POS=(13,1),LENGTH=10,ATTRB=(ASKIP),                     C
+               INITIAL='[F9 ] BACK'
 * STUDENT NUMBER
         DFHMDF POS=(5,25),LENGTH=15,ATTRB=(ASKIP),                     C
                INITIAL='STUDENT NUMBER:'
@@ -16,37 +23,58 @@ STUNUM  DFHMDF POS=(5,41),LENGTH=7,ATTRB=(UNPROT,FSET,IC)
 * COUSE CODES       
         DFHMDF POS=(7,25),LENGTH=15,ATTRB=(ASKIP),                     C
                INITIAL='COURSE CODES 1)'
-CODE1   DFHMDF POS=(7,41),LENGTH=9,ATTRB=(ASKIP),                      C
-               INITIAL='XXXX XXXX'
+CODE1A  DFHMDF POS=(7,41),LENGTH=4,ATTRB=(ASKIP),                      C
+               INITIAL='XXXX'
+CODE1B  DFHMDF POS=(7,47),LENGTH=4,ATTRB=(ASKIP),                      C
+               INITIAL='XXXX'
         DFHMDF POS=(8,38),LENGTH=2,ATTRB=(ASKIP),                      C
                INITIAL='2)'
-CODE2   DFHMDF POS=(8,41),LENGTH=9,ATTRB=(ASKIP),                      C
-               INITIAL='XXXX XXXX'
+CODE2A  DFHMDF POS=(8,41),LENGTH=4,ATTRB=(ASKIP),                      C
+               INITIAL='XXXX'
+CODE2B  DFHMDF POS=(8,47),LENGTH=4,ATTRB=(ASKIP),                      C
+               INITIAL='XXXX'
         DFHMDF POS=(9,38),LENGTH=2,ATTRB=(ASKIP),                      C
                INITIAL='3)'
-CODE3   DFHMDF POS=(9,41),LENGTH=9,ATTRB=(ASKIP),                      C
-               INITIAL='XXXX XXXX'
+CODE3A  DFHMDF POS=(9,41),LENGTH=4,ATTRB=(ASKIP),                      C
+               INITIAL='XXXX'
+CODE3B  DFHMDF POS=(9,47),LENGTH=4,ATTRB=(ASKIP),                      C
+               INITIAL='XXXX'
         DFHMDF POS=(10,38),LENGTH=2,ATTRB=(ASKIP),                     C
                INITIAL='4)'    
-CODE4   DFHMDF POS=(10,41),LENGTH=9,ATTRB=(ASKIP),                     C
-               INITIAL='XXXX XXXX'
+CODE4A  DFHMDF POS=(10,41),LENGTH=4,ATTRB=(ASKIP),                     C
+               INITIAL='XXXX'
+CODE4B  DFHMDF POS=(7,47),LENGTH=4,ATTRB=(ASKIP),                      C
+               INITIAL='XXXX'
+        DFHMDF POS=(11,38),LENGTH=2,ATTRB=(ASKIP),                     C
+               INITIAL='5)'    
+CODE5A  DFHMDF POS=(11,41),LENGTH=4,ATTRB=(ASKIP),                     C
+               INITIAL='XXXX'
+CODE5B  DFHMDF POS=(11,47),LENGTH=4,ATTRB=(ASKIP),                     C
+               INITIAL='XXXX'
 * STUDENT NAME
-        DFHMDF POS=(12,25),LENGTH=15,ATTRB=(ASKIP),                    C
+        DFHMDF POS=(13,25),LENGTH=15,ATTRB=(ASKIP),                    C
                INITIAL='STUDENT NAME  :'
-STUNAME DFHMDF POS=(12,41),LENGTH=20,ATTRB=(ASKIP),                    C
+STUNAME DFHMDF POS=(13,41),LENGTH=20,ATTRB=(ASKIP),                    C
                INITIAL='XXXXXXXXXXXXXXXXXXXX'
 * ADDRESS
-        DFHMDF POS=(14,25),LENGTH=15,ATTRB=(ASKIP),                    C
+        DFHMDF POS=(15,25),LENGTH=15,ATTRB=(ASKIP),                    C
                INITIAL='ADDRESS       :'
-ADDR1   DFHMDF POS=(14,41),LENGTH=20,ATTRB=(ASKIP)
-ADDR2   DFHMDF POS=(15,41),LENGTH=20,ATTRB=(ASKIP)
-ADDR3   DFHMDF POS=(16,41),LENGTH=20,ATTRB=(ASKIP)
-ADDRPC  DFHMDF POS=(17,41),LENGTH=7,ATTRB=(ASKIP)
+ADDR1   DFHMDF POS=(15,41),LENGTH=20,ATTRB=(ASKIP)
+ADDR2   DFHMDF POS=(16,41),LENGTH=20,ATTRB=(ASKIP)
+ADDR3   DFHMDF POS=(17,41),LENGTH=20,ATTRB=(ASKIP)
+ADDRPCA DFHMDF POS=(18,41),LENGTH=3,ATTRB=(ASKIP)
+ADDRPCB DFHMDF POS=(18,45),LENGTH=3,ATTRB=(ASKIP)
 * PHONE
-        DFHMDF POS=(19,25),LENGTH=15,ATTRB=(ASKIP),                    C
+        DFHMDF POS=(20,25),LENGTH=15,ATTRB=(ASKIP),                    C
                INITIAL='PHONE         :'
-PHONE   DFHMDF POS=(19,41),LENGTH=14,ATTRB=(ASKIP)
+        DFHMDF POS=(21,41),LENGTH=1,ATTRB=(ASKIP),                     C
+               INITIAL='('
+PHARE   DFHMDF POS=(21,43),LENGTH=3,ATTRB=(ASKIP)
+        DFHMDF POS=(21,47),LENGTH=1,ATTRB=(ASKIP),                     C
+               INITIAL=')'
+PHEXC   DFHMDF POS=(21,49),LENGTH=3,ATTRB=(ASKIP)
+PHNUM   DFHMDF POS=(21,53),LENGTH=4,ATTRB=(ASKIP)
 * RESPONSE MESSAGE
-MSG     DFHMDF POS=(22,35),LENGTH=40,ATTRB=(ASKIP,BRT)
+MSG     DFHMDF POS=(22,20),LENGTH=40,ATTRB=(ASKIP,BRT)
 * END MAP
         DFHMSD TYPE=FINAL

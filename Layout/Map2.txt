@@ -4,7 +4,7 @@
 RICHARD                  I N Q U I R Y   S C R E E N
 LANG                    =============================
 
-                        STUDENT NUMBER: XXXXXXX
+[F9] BACK               STUDENT NUMBER: XXXXXXX
                         
                         COURSE CODES 1) XXXX XXXX
                                      2) XXXX XXXX
@@ -19,6 +19,6 @@ LANG                    =============================
                                         XXXXLINE 3 XXXXXXXXX
                                         XXX XXX
                                         
-                        PHONE         : (XXX) XXX-XXXX
+                        PHONE         : ( XXX ) XXX XXXX
                         
                    [ MESSAGE AREA GOES HERE                ]

@@ -6,8 +6,23 @@ MENU    DFHMDI SIZE=(24,80)
         DFHMDF POS=(2,32),LENGTH=17,ATTRB=(ASKIP,BRT),                 C
                INITIAL='M A I N   M E N U'               
         DFHMDF POS=(3,31),LENGTH=19,ATTRB=(ASKIP,BRT),                 C
-               INITIAL='==========================='
-*
+               INITIAL='==================='
+* NAME
+        DFHMDF POS=(2,1),LENGTH=7,ATTRB=(ASKIP),                       C
+               INITIAL='RICHARD'
+        DFHMDF POS=(3,1),LENGTH=4,ATTRB=(ASKIP),                       C
+               INITIAL='LANG'               
+* MENU
+        DFHMDF POS=(5,1),LENGTH=14,ATTRB=(ASKIP),                      C
+               INITIAL='[F1 ] CHOICE 1'
+        DFHMDF POS=(6,1),LENGTH=14,ATTRB=(ASKIP),                      C
+               INITIAL='[F2 ] CHOICE 2'
+        DFHMDF POS=(7,1),LENGTH=14,ATTRB=(ASKIP),                      C
+               INITIAL='[F3 ] CHOICE 3'
+        DFHMDF POS=(8,1),LENGTH=14,ATTRB=(ASKIP),                      C
+               INITIAL='[F4 ] CHOICE 4'
+        DFHMDF POS=(13,1),LENGTH=10,ATTRB=(ASKIP),                     C
+               INITIAL='[F9 ] EXIT'
 * CHOICE 1
         DFHMDF POS=(5,20),LENGTH=8,ATTRB=(ASKIP),                      C
                INITIAL='CHOICE 1'
@@ -35,12 +50,11 @@ MENU    DFHMDI SIZE=(24,80)
                INITIAL='EXIT THIS SCREEN'       
 *
 * CHOICE SELECTION
-        DFHMDF POS=(11,20),LENGTH=23,ATTRB=(ASKIP,BRT),                C
+        DFHMDF POS=(15,20),LENGTH=23,ATTRB=(ASKIP,BRT),                C
                INITIAL='ENTER YOUR CHOICE HERE:'
-CHOICE  DFHMDF POS=(11,44),LENGTH=1,ATTRB=(UNPROT,FSET,IC)
-        DFHMDF POS=(11,46),LENGTH=1,ATTRB=(ASKIP)
+CHOICE  DFHMDF POS=(15,44),LENGTH=1,ATTRB=(UNPROT,FSET,IC)
+        DFHMDF POS=(15,46),LENGTH=1,ATTRB=(ASKIP)
 * RESPONSE MESSAGE
 MSG     DFHMDF POS=(23,20),LENGTH=40,ATTRB=(ASKIP,BRT)
 * END MAP
         DFHMSD TYPE=FINAL
-        END
