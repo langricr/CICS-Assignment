@@ -1,0 +1,52 @@
+RLMAP2  DFHMSD TYPE=MAP,TIOAPFX=YES,MODE=INOUT,LANG=COBOL,             C
+               STORAGE=AUTO,TERM=3270
+* MENU MAP
+MENUINQ DFHMDI SIZE=(24,80)
+* MAIN MENU
+        DFHMDF POS=(2,26),LENGTH=27,ATTRB=(ASKIP,BRT),                 C
+               INITIAL='I N Q U I R Y   S C R E E N'             
+        DFHMDF POS=(3,25),LENGTH=29,ATTRB=(ASKIP,BRT),                 C
+               INITIAL='============================='
+*
+* STUDENT NUMBER
+        DFHMDF POS=(5,25),LENGTH=15,ATTRB=(ASKIP),                     C
+               INITIAL='STUDENT NUMBER:'
+STUNUM  DFHMDF POS=(5,41),LENGTH=7,ATTRB=(UNPROT,FSET,IC)
+        DFHMDF POS=(5,49),LENGTH=1,ATTRB=(ASKIP)
+* COUSE CODES       
+        DFHMDF POS=(7,25),LENGTH=15,ATTRB=(ASKIP),                     C
+               INITIAL='COURSE CODES 1)'
+CODE1   DFHMDF POS=(7,41),LENGTH=9,ATTRB=(ASKIP),                      C
+               INITIAL='XXXX XXXX'
+        DFHMDF POS=(8,38),LENGTH=2,ATTRB=(ASKIP),                      C
+               INITIAL='2)'
+CODE2   DFHMDF POS=(8,41),LENGTH=9,ATTRB=(ASKIP),                      C
+               INITIAL='XXXX XXXX'
+        DFHMDF POS=(9,38),LENGTH=2,ATTRB=(ASKIP),                      C
+               INITIAL='3)'
+CODE3   DFHMDF POS=(9,41),LENGTH=9,ATTRB=(ASKIP),                      C
+               INITIAL='XXXX XXXX'
+        DFHMDF POS=(10,38),LENGTH=2,ATTRB=(ASKIP),                     C
+               INITIAL='4)'    
+CODE4   DFHMDF POS=(10,41),LENGTH=9,ATTRB=(ASKIP),                     C
+               INITIAL='XXXX XXXX'
+* STUDENT NAME
+        DFHMDF POS=(12,25),LENGTH=15,ATTRB=(ASKIP),                    C
+               INITIAL='STUDENT NAME  :'
+STUNAME DFHMDF POS=(12,41),LENGTH=20,ATTRB=(ASKIP),                    C
+               INITIAL='XXXXXXXXXXXXXXXXXXXX'
+* ADDRESS
+        DFHMDF POS=(14,25),LENGTH=15,ATTRB=(ASKIP),                    C
+               INITIAL='ADDRESS       :'
+ADDR1   DFHMDF POS=(14,41),LENGTH=20,ATTRB=(ASKIP)
+ADDR2   DFHMDF POS=(15,41),LENGTH=20,ATTRB=(ASKIP)
+ADDR3   DFHMDF POS=(16,41),LENGTH=20,ATTRB=(ASKIP)
+ADDRPC  DFHMDF POS=(17,41),LENGTH=7,ATTRB=(ASKIP)
+* PHONE
+        DFHMDF POS=(19,25),LENGTH=15,ATTRB=(ASKIP),                    C
+               INITIAL='PHONE         :'
+PHONE   DFHMDF POS=(19,41),LENGTH=14,ATTRB=(ASKIP)
+* RESPONSE MESSAGE
+MSG     DFHMDF POS=(22,35),LENGTH=40,ATTRB=(ASKIP,BRT)
+* END MAP
+        DFHMSD TYPE=FINAL

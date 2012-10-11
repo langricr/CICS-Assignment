@@ -1,0 +1,46 @@
+RLMAP1  DFHMSD TYPE=MAP,TIOAPFX=YES,MODE=INOUT,LANG=COBOL,             C
+               STORAGE=AUTO,TERM=3270
+* MENU MAP
+MENU    DFHMDI SIZE=(24,80)
+* MAIN MENU
+        DFHMDF POS=(2,32),LENGTH=17,ATTRB=(ASKIP,BRT),                 C
+               INITIAL='M A I N   M E N U'               
+        DFHMDF POS=(3,31),LENGTH=19,ATTRB=(ASKIP,BRT),                 C
+               INITIAL='==========================='
+*
+* CHOICE 1
+        DFHMDF POS=(5,20),LENGTH=8,ATTRB=(ASKIP),                      C
+               INITIAL='CHOICE 1'
+        DFHMDF POS=(5,31),LENGTH=24,ATTRB=(ASKIP),                     C
+               INITIAL='CHOICE ENTER NEW STUDENT'
+* CHOICE 2
+        DFHMDF POS=(6,20),LENGTH=8,ATTRB=(ASKIP),                      C
+               INITIAL='CHOICE 2'
+        DFHMDF POS=(6,31),LENGTH=32,ATTRB=(ASKIP),                     C
+               INITIAL='CHOICE INQUIRE BY STUDENT NUMBER'
+* CHOICE 3
+        DFHMDF POS=(7,20),LENGTH=8,ATTRB=(ASKIP),                      C
+               INITIAL='CHOICE 3'
+        DFHMDF POS=(7,31),LENGTH=32,ATTRB=(ASKIP),                     C
+               INITIAL='SEARCH / DELETE EXISTING STUDENT'
+* CHOICE 4
+        DFHMDF POS=(8,20),LENGTH=8,ATTRB=(ASKIP),                      C
+               INITIAL='CHOICE 4'
+        DFHMDF POS=(8,31),LENGTH=22,ATTRB=(ASKIP),                     C
+               INITIAL='SEARCH BY STUDENT NAME'
+* CHOICE 5
+        DFHMDF POS=(9,20),LENGTH=8,ATTRB=(ASKIP),                      C
+               INITIAL='CHOICE 9'       
+        DFHMDF POS=(9,31),LENGTH=16,ATTRB=(ASKIP),                     C
+               INITIAL='EXIT THIS SCREEN'       
+*
+* CHOICE SELECTION
+        DFHMDF POS=(11,20),LENGTH=23,ATTRB=(ASKIP,BRT),                C
+               INITIAL='ENTER YOUR CHOICE HERE:'
+CHOICE  DFHMDF POS=(11,44),LENGTH=1,ATTRB=(UNPROT,FSET,IC)
+        DFHMDF POS=(11,46),LENGTH=1,ATTRB=(ASKIP)
+* RESPONSE MESSAGE
+MSG     DFHMDF POS=(23,20),LENGTH=40,ATTRB=(ASKIP,BRT)
+* END MAP
+        DFHMSD TYPE=FINAL
+        END

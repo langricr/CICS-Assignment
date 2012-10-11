@@ -1,15 +1,15 @@
 1                  20                  40                  60                  80
 |__________________|___________________|___________________|___________________|
-
-                               M A I N   M E N U   
-                              ===================
-                              
-                   CHOICE 1   ENTER NEW STUDENT
-                   CHOICE 2   INQUIRE BY STUDENT NUMBER
-                   CHOICE 3   SEARCH / DELETE EXISTING STUDENT
-                   CHOICE 4   SEARCH BY STUDENT NAME
-                   CHOICE 9   EXIT THIS SCREEN
-                   
-                   ENTER YOUR CHOICE HERE: X
-                   
-                   [        RESULT MESSAGE GOES HERE       ]
+                                                                                - 0
+                               M A I N   M E N U                                | 1
+                              ===================                               | 2
+                                                                                | 3
+                   CHOICE 1   ENTER NEW STUDENT                                 | 4
+                   CHOICE 2   INQUIRE BY STUDENT NUMBER                         | 5
+                   CHOICE 3   SEARCH / DELETE EXISTING STUDENT                  | 6
+                   CHOICE 4   SEARCH BY STUDENT NAME                            | 7
+                   CHOICE 9   EXIT THIS SCREEN                                  | 8
+                                                                                | 9
+                   ENTER YOUR CHOICE HERE: X                                    | 10
+                                                                                | 11
+                   [        RESULT MESSAGE GOES HERE       ]                    - 12

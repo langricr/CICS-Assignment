@@ -1,0 +1,24 @@
+1                  20                  40                  60                  80
+|__________________|___________________|___________________|___________________|
+
+RICHARD                  I N Q U I R Y   S C R E E N
+LANG                    =============================
+
+                        STUDENT NUMBER: XXXXXXX
+                        
+                        COURSE CODES 1) XXXX XXXX
+                                     2) XXXX XXXX
+                                     3) XXXX XXXX
+                                     4) XXXX XXXX
+                                     5) XXXX XXXX
+
+                        STUDENT NAME  : XXXXXXXXXXXXXXXXXXXX
+
+                        ADDRESS       : XXXXLINE 1 XXXXXXXXX
+                                        XXXXLINE 2 XXXXXXXXX
+                                        XXXXLINE 3 XXXXXXXXX
+                                        XXX XXX
+                                        
+                        PHONE         : (XXX) XXX-XXXX
+                        
+                   [ MESSAGE AREA GOES HERE                ]
